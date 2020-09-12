@@ -1,1 +1,1 @@
-# BloodSugarBuddy
+# GlucoseBuddy
