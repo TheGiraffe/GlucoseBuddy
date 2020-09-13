@@ -8,4 +8,5 @@ This project was my first time getting back into using Android Studio and Java a
 Overall I am quite happy with how it turned out. :)
 
 Video Demo: https://youtu.be/sMlEnIebeO0
+
 Screencapture: https://youtu.be/5VlDiIT2M6I
