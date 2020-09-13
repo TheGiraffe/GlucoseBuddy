@@ -6,3 +6,6 @@ My sister and I created this app because of our personal experiences with having
 This project was my first time getting back into using Android Studio and Java after several years. It has been a great learning experience for me and I used a really great tutorial to learn how to create the main alarm clock functionality and bring this idea to life. The tutorial is this one for anyone who is interested in following it: https://learntodroid.com/how-to-create-a-simple-alarm-clock-app-in-android/. Much of the code is based on what I learned in this tutorial.
 
 Overall I am quite happy with how it turned out. :)
+
+Video Demo: https://youtu.be/sMlEnIebeO0
+Screencapture: https://youtu.be/5VlDiIT2M6I
