@@ -9,25 +9,29 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/gluccreatealarm">
 
         <TextView
             android:id="@+id/fragment_createalarm_scheduleAlarmHeading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="#E91E63"
+            android:background="#F78DA4"
             android:text="Schedule Alarm"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000000"
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:id="@+id/fragment_createalarm_timePickerLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="124dp"
             android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_createalarm_scheduleAlarmHeading">
+            app:layout_constraintTop_toBottomOf="@+id/fragment_createalarm_scheduleAlarmHeading"
+            tools:layout_editor_absoluteX="0dp">
 
             <TextView
                 android:layout_width="0dp"
@@ -50,13 +54,16 @@
             android:id="@+id/fragment_createalarm_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:hint="Alarm Title"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_createalarm_timePickerLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/fragment_createalarm_timePickerLayout"
+            tools:layout_editor_absoluteX="0dp" />
 
         <CheckBox
             android:id="@+id/fragment_createalarm_recurring"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:checked="false"
             android:text="Recurring Alarm"
             app:layout_constraintStart_toStartOf="parent"
@@ -72,45 +79,59 @@
 
             <CheckBox
                 android:id="@+id/fragment_createalarm_checkMon"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Mon" />
+                android:layout_weight="1"
+                android:text="Mon"
+                android:textSize="10sp" />
 
             <CheckBox
                 android:id="@+id/fragment_createalarm_checkTue"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tue" />
+                android:layout_weight="1"
+                android:text="Tue"
+                android:textSize="10sp" />
 
             <CheckBox
                 android:id="@+id/fragment_createalarm_checkWed"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Wed" />
+                android:layout_weight="1"
+                android:text="Wed"
+                android:textSize="10sp" />
 
             <CheckBox
                 android:id="@+id/fragment_createalarm_checkThu"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Thu" />
+                android:layout_weight="1"
+                android:text="Thu"
+                android:textSize="10sp" />
 
             <CheckBox
                 android:id="@+id/fragment_createalarm_checkFri"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Fri" />
+                android:layout_weight="1"
+                android:text="Fri"
+                android:textSize="10sp" />
 
             <CheckBox
                 android:id="@+id/fragment_createalarm_checkSat"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sat" />
+                android:layout_weight="1"
+                android:text="Sat"
+                android:textSize="10sp" />
 
             <CheckBox
                 android:id="@+id/fragment_createalarm_checkSun"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sun" />
+                android:layout_weight="1"
+                android:text="Sun"
+                android:textSize="10sp" />
 
         </LinearLayout>
 
@@ -122,6 +143,45 @@
             android:text="Schedule Alarm"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:layout_editor_absoluteX="133dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="409dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="20dp"
+            android:background="#F78DA4"
+            android:text="My Medicines:"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/fragment_createalarm_recurring2"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_createalarm_recurring"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <CheckBox
+            android:id="@+id/fragment_createalarm_recurring2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:text="Metformin 500mg"
+            app:layout_constraintBottom_toTopOf="@+id/fragment_createalarm_recurring3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <CheckBox
+            android:id="@+id/fragment_createalarm_recurring3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="56dp"
+            android:checked="false"
+            android:text="Victoza 0.6mg"
+            app:layout_constraintBottom_toTopOf="@+id/fragment_createalarm_scheduleAlarm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_createalarm_recurring2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
